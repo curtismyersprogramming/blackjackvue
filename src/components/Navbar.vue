@@ -18,11 +18,27 @@ export default {
 </script>
 
 <style scoped>
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 header{
-    background-color: blue;
-    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
     width: 100%;
+    align-items: center;
+    padding: 30px 10%;
+    color: white;
+
 }
 
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
 
 </style>
