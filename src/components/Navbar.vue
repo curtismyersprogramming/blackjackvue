@@ -5,6 +5,7 @@
             <ul class="nav_links">
                 <li><a href="#">Rules</a></li>
                 <li><a href="#">Card Counting</a></li>
+                <li><Button text="login" color="purple"/></li>
             </ul>
             
         </nav>
@@ -12,9 +13,15 @@
 </template>
 
 <script>
+import Button from './Button.vue'
 export default {
-    name: 'Navbar-item'
-}
+    name: 'Navbar-item',
+    components:{
+        Button
+
+    }
+};
+
 </script>
 
 <style scoped>
