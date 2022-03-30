@@ -28,7 +28,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
-    height: 10vh;
+    height: 5vh;
     width: 100%;
     align-items: center;
     padding: 30px 10%;
@@ -39,6 +39,13 @@ header{
 .nav_links li{
     display: inline-block;
     padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: gold;
 }
 
 </style>
