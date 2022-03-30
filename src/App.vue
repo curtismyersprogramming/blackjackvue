@@ -37,9 +37,9 @@ body {
 }
 .container {
   max-width: 95%;
-  margin: 30px auto;
+  margin: 10px auto;
   overflow: auto;
-  min-height: 95vh;
+  min-height: 90vh;
   padding: 10px;
   border-radius: 5px;
   background-color: #ffffff;
