@@ -1,8 +1,10 @@
 <template>
     <main class="game-area">
         <section class="dealer-area">
+            <h1>hello</h1>
         </section>
         <section class ="player-area">
+            <h1>hello</h1>
         </section>
     </main>
 </template>
