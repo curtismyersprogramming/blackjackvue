@@ -5,7 +5,9 @@
         </section>
         <section class ="player-area">
             
-            <img src ="src/png/2_of_clubs.png" alt="">
+            <img src="png/2_of_clubs.png" alt="">
+            <img src="png/6_of_clubs.png" alt="">
+            
             
             
         </section>
@@ -70,7 +72,7 @@ export default {
   flex: 1 0;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: blue;
 }
@@ -123,7 +125,8 @@ export default {
 
 img{
     width:10rem;
-    height:12rem
+    height:12rem;
+    margin-right: 10px;
    
 }
 
