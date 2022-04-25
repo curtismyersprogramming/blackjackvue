@@ -53,7 +53,7 @@ header{
     transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover{
-    color: gold;
+    color: grey;
 }
 
 .maintitle{
