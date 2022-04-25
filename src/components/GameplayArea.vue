@@ -9,10 +9,13 @@
             
             
         </section>
+        <div class='playercontrol'>
+            <player-control-area/>
+        </div>
         <div class="info-area">
               
                 <div class="info-bar">
-                    <div class="grid-item">Dealers Hand</div>
+                    <div class="grid-item">Dealers Hand: 19</div>
                     <div class="grid-item-feedback">Feedback</div>
                     <div class="grid-item">Bank</div>
                     <div class="grid-item">Count Values</div>
@@ -24,8 +27,13 @@
 </template>
 
 <script>
+import PlayerControlArea from './PlayerControlArea.vue'
+
 export default {
-    
+    name: 'gamePlayArea',
+    components:{
+        PlayerControlArea
+    }
 }
 </script>
 
@@ -76,6 +84,7 @@ export default {
     color: white;
     
     
+    
 }
 
 .grid-item{
@@ -84,6 +93,7 @@ export default {
     align-items: center;
     width: 100%;
     height: 100%;
+    font-weight: bold;
     
 }
 
