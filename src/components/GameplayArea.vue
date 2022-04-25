@@ -13,7 +13,7 @@
               
                 <div class="info-bar">
                     <div class="grid-item">Dealers Hand</div>
-                    <div class="grid-item">Feedback</div>
+                    <div class="grid-item-feedback">Feedback</div>
                     <div class="grid-item">Bank</div>
                     <div class="grid-item">Count Values</div>
                     <div class="grid-item">Players Hand</div>
@@ -72,9 +72,28 @@ export default {
     width: 95%;
     height: 85%;
     border-radius: 15px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     color: white;
     
     
 }
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.grid-item-feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: green;
+}
+
 </style>
