@@ -16,10 +16,20 @@
               
                 <div class="info-bar">
                     <div class="grid-item">Dealers Hand: 19</div>
-                    <div class="grid-item-feedback">Feedback</div>
-                    <div class="grid-item">Bank</div>
-                    <div class="grid-item">Count Values</div>
-                    <div class="grid-item">Players Hand</div>
+                    <div class="grid-item-feedback">Select an option to recieve feedback</div>
+                    <div class="grid-item">
+                       
+                        <p class="bank-up">+</p>
+                        <p class="bet-value">100</p>
+                        <p class="bank-down">-</p>
+                    </div>
+                    <div class="grid-item">
+                        Running Count: +2<br>
+                        Cards remaining: 212<br>
+                        True Count: +1
+                                        
+                    </div>
+                    <div class="grid-item">Dealers Hand: 19</div>
 
                     </div>
                 </div>
@@ -82,6 +92,10 @@ export default {
     border-radius: 15px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     color: white;
+    font-weight: bold;
+    
+
+    
     
     
     
@@ -91,9 +105,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
-    font-weight: bold;
+    
     
 }
 
