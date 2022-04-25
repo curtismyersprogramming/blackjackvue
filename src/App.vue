@@ -10,13 +10,29 @@ import Navbar from './components/Navbar'
 import GameplayArea from './components/GameplayArea.vue'
 
 
+
 export default {
   name: 'App',
   components: {
     Navbar,
-    GameplayArea
+    GameplayArea,
+   
     
+  },
+  data() {
+    return{
+    isGameRunning:false,
+    }
+  },
+  methods: {
+    startGame(){
+      this.isGameRunning =true;
+      console.log("game is true");
+
+    }
   }
+
+ 
 }
 </script>
 

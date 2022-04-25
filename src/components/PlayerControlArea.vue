@@ -1,6 +1,6 @@
 <template>
 <div class="button-area">
-    <Button  v-if="!isVisible" class="deal-button"     text="Deal" color="grey"/>
+    <Button  @click="isVisible=true"  v-if="!isVisible" class="deal-button"     text="Deal" color="grey"/>
     <div v-if="isVisible" class = GameplayButtons>
     <Button class="double-button"   text="Double Down"/>
     <Button class="hit-button"      text="Hit"/>
@@ -9,7 +9,7 @@
     </div>
 </div>
     
-</template>
+</template>         
 
 <script>
 

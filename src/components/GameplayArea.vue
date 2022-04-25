@@ -1,12 +1,13 @@
 <template>
     <main class="game-area">
         <section class="dealer-area">
-            <h1>Dealer</h1>
+            <img src="./png/2_of_clubs.png" alt="2 of clubs">
+            <img src="./png/6_of_clubs.png" alt="6 of clubs">
         </section>
         <section class ="player-area">
             
-            <img src="png/2_of_clubs.png" alt="">
-            <img src="png/6_of_clubs.png" alt="">
+            <img src="./png/2_of_clubs.png" alt="2 of clubs">
+            <img src="./png/6_of_clubs.png" alt="6 of clubs">
             
             
             
@@ -17,7 +18,7 @@
         <div class="info-area">
               
                 <div class="info-bar">
-                    <div class="grid-item">Dealers Hand: 19</div>
+                    <div class="grid-item">Dealers Hand: {{ dealerValue }} </div>
                     <div class="grid-item-feedback">Select an option to recieve feedback</div>
                     <div class="grid-item">
                        
@@ -31,7 +32,7 @@
                         True Count: +1
                                         
                     </div>
-                    <div class="grid-item">Dealers Hand: 19</div>
+                    <div class="grid-item">Dealers Hand: {{ playerValue }}</div>
 
                     </div>
                 </div>
@@ -41,11 +42,28 @@
 <script>
 import PlayerControlArea from './PlayerControlArea.vue'
 
+
+
+
+
 export default {
     name: 'gamePlayArea',
     components:{
-        PlayerControlArea
+        PlayerControlArea,
+       
+       
+    },
+    data(){
+        
+        return{
+            dealerValue: 8,
+            playerValue: 8
+        }
     }
+    
+    
+        
+    
 }
 </script>
 
@@ -124,8 +142,7 @@ export default {
 }
 
 img{
-    width:10rem;
-    height:12rem;
+    width:7rem;
     margin-right: 10px;
    
 }
