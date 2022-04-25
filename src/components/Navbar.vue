@@ -1,11 +1,11 @@
 <template>
     <header>
-        <h1>Blackjack</h1>
-        <nav>
+       <nav>
             <ul class="nav_links">
                 <li><a href="#">Rules</a></li>
+                <li class="maintitle">Blackjack</li>
                 <li><a href="#">Card Counting</a></li>
-                <li><Button text="login" color="purple"/></li>
+                
             </ul>
             
         </nav>
@@ -13,11 +13,12 @@
 </template>
 
 <script>
-import Button from './Button.vue'
+
+
 export default {
     name: 'Navbar-item',
     components:{
-        Button
+       
 
     }
 };
@@ -33,7 +34,7 @@ li,a{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(0, 0, 0);
     height: 5vh;
     width: 100%;
@@ -53,6 +54,11 @@ header{
 }
 .nav_links li a:hover{
     color: gold;
+}
+
+.maintitle{
+    font-weight: bold;
+    font-size: 26px;
 }
 
 </style>
