@@ -5,7 +5,7 @@
         </section>
         <section class ="player-area">
             
-            <h1>Player</h1>
+            <img src ="src/png/2_of_clubs.png" alt="">
             
             
         </section>
@@ -119,6 +119,12 @@ export default {
     width: 100%;
     height: 100%;
     background: green;
+}
+
+img{
+    width:10rem;
+    height:12rem
+   
 }
 
 </style>
